@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin:ital@1&family=Montserrat:wght@300;500&family=Nunito&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin:ital@1&family=Montserrat:wght@300;500&family=Nunito&family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(to right, #009fff, #ec2f4b); */
+    /* background: linear-gradient(to right, #00b4db, #0083b0); */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Poppins','Montserrat';
+    font-size: 20px;
+    color: white;
+}
+
+header{
+  margin: 1rem 1rem;
+  display: flex;
+  font-weight: bolder;
+  align-items: start;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  padding: 0.71rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+article:hover{
+  cursor: pointer;
+}
+
+input.error{
+border: 2px solid red;
+}
+
+::placeholder{
+  font-size: 1.2rem;
+
+}
+
+article .alert{
+  opacity: 0.6;
+}
+
+
+.btn{
+  padding: 0.7rem;
+  font-weight: 700;
+  width: 6rem;
+  /* background: linear-gradient(to right, #00b4db, #0083b0); */
+  background: linear-gradient(to right, #009fff, #ec2f4b);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.colors{
+  display:grid;
+  /* padding: 0.1rem; */
+
+}
+
+.color-box{
+  color: black;
+  font-weight: bolder;
+}
+
+.shadow-text{
+  color: white;
+  font-weight: 500;
+}
+
+article{
+  height: 16rem;
+ 
+}
+
+@media(min-width:500px){
+  header h1{
+    font-size: 1rem;
+  }
+
+  input[type='text']{
+    font-size: 0.8rem;
+  }
+  .btn{
+    padding: 0.67rem;
+  }
+
+  .colors{
+    display: grid;
+    grid-template-columns:1fr;
+  }
+
+  .color-box{
+    padding: 2rem;
+  }
+
+} 
+
+
+@media(min-width:768px){
+  header h1{
+    font-size: 1.5rem;
+  }
+
+  input[type='text']{
+    font-size: 1rem;
+  }
+  .btn{
+    padding: 0.75rem;
+  }
+
+  .colors{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .color-box{
+    padding: 4rem;
+  }
+
+} 
+
+@media(min-width:1200px){
+  header h1{
+    font-size: 1.8rem;
+  }
+
+  input[type='text']{
+    font-size: 1rem;
+  }
+  .btn{
+    padding: 0.75rem;
+  }
+
+  .colors{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+  .color-box{
+    padding: 4rem;
+  }
+
+} 
+
+
+
+
+
+
+
+
