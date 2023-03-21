@@ -1,5 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Rubik+Iso&family=Fredoka+One&family=Inconsolata:wght@800&family=Indie+Flower&family=Itim&family=League+Spartan:wght@400&family=Paytone+One&family=Montserrat:wght@300&family=Nunito&family=Open+Sans:wght@300&family=Roboto+Slab:wght@500&family=Tilt+Neon&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Montserrat:wght@300&family=Nunito&family=Open+Sans:wght@300&family=Roboto+Slab:wght@500&family=Tilt+Neon&family=Tilt+Prism&display=swap");
 
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --font-family: "Payton One", "Montserrat";
+
+  --box-shadow-second: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +16,6 @@
 body {
   font-family: "Payton One", "Montserrat", "sans-serif";
   font-size: 20px;
-  color: white;
   min-height: 100vh;
   background-color: #e8ecf4;
 }
@@ -28,7 +34,7 @@ header {
 }
 
 .header-container h1 {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   padding: 1rem 2rem;
   text-align: center;
   background: linear-gradient(to right, #009fff, #ec2f4b);
@@ -38,6 +44,7 @@ header {
   border-radius: 5px;
   word-wrap: nowrap;
   width: 90%;
+  color: white;
 }
 
 form {
@@ -50,14 +57,14 @@ form {
 }
 
 form input {
-  font-family: "Payton One", "Montserrat";
+  font-family: var(--font-family);
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
   background-color: white;
   width: 15rem;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: var(--box-shadow-second);
   border-style: hidden;
 }
 
@@ -76,15 +83,9 @@ button.btn {
   font-size: 1.5rem;
   font-family: "Paytone One", Times, serif;
   letter-spacing: 0.1rem;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: var(--box-shadow-second);
   border-style: hidden;
 }
-
-/* input,
-button {
-  padding: 0.7rem;
-  border-radius: 5px;
-} */
 
 input:focus {
   outline: none;
@@ -95,7 +96,7 @@ article:hover {
 }
 
 input.error {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 ::placeholder {
@@ -103,7 +104,7 @@ input.error {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Payton One", "Montserrat", "sans-serif";
+  font-family: var(--font-family);
 }
 
 article .alert {
@@ -123,12 +124,12 @@ h2.example {
   color: #585d6b;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Payton One", "Montserrat", "sans-serif";
+  font-family: var(--font-family);
   font-weight: 900;
 }
 
 .color-pallette {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   width: 13rem;
   height: 15rem;
   margin: 1rem;
@@ -183,7 +184,7 @@ h2.example {
 }
 
 .color-box {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   height: 16rem;
   color: black;
   font-weight: bolder;
