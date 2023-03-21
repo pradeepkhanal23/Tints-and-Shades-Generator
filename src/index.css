@@ -6,6 +6,9 @@
 
   --box-shadow-second: rgba(0, 0, 0, 0.12) 0px 1px 3px,
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  /* --linear-gradient: linear-gradient(to right, #009fff, #ec2f4b); */
+  --linear-gradient: linear-gradient(to right, #614385, #516395);
 }
 * {
   padding: 0;
@@ -37,7 +40,7 @@ header {
   box-shadow: var(--box-shadow);
   padding: 1rem 2rem;
   text-align: center;
-  background: linear-gradient(to right, #009fff, #ec2f4b);
+  background: var(--linear-gradient);
   font-family: "Paytone One", Times, serif;
   letter-spacing: 0.1rem;
   font-size: 2.5rem;
@@ -73,7 +76,7 @@ button.btn {
   padding: 0.75rem 6rem;
   font-weight: 900;
   width: 6rem;
-  background: linear-gradient(to right, #009fff, #ec2f4b);
+  background: var(--linear-gradient);
   color: white;
   cursor: pointer;
   border-radius: 30px;
@@ -88,7 +91,7 @@ button.btn {
 }
 
 input:focus {
-  outline: 2px solid #68747d;
+  outline: 2px solid #1f2c6585;
 }
 
 article:hover {
