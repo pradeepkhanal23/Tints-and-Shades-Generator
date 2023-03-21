@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const SingleColor = ({ rgb, weight, index, type, hexColor }) => {
+const SingleColor = ({ rgb, weight, index, hexColor }) => {
   const [alert, setAlert] = useState(false);
   const bgColor = rgb.join(",");
   const hexValue = `#${hexColor}`;
@@ -21,7 +21,7 @@ const SingleColor = ({ rgb, weight, index, type, hexColor }) => {
           setAlert(true);
           navigator.clipboard.writeText(hexValue);
         }}
-        className={`color-box ${index > 7 && "shadow-text"}`}
+        className={`color-box ${index > 9 && "shadow-text"}`}
         style={{ backgroundColor: `rgb(${bgColor})` }}
       >
         <p>{weight} %</p>
