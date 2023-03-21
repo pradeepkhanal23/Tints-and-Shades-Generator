@@ -59,7 +59,7 @@ form {
 form input {
   font-family: var(--font-family);
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.9rem;
   text-align: center;
   background-color: white;
   width: 15rem;
@@ -70,7 +70,7 @@ form input {
 
 button.btn {
   outline: none;
-  padding: 0.8rem 6rem;
+  padding: 0.75rem 6rem;
   font-weight: 900;
   width: 6rem;
   background: linear-gradient(to right, #009fff, #ec2f4b);
@@ -88,7 +88,7 @@ button.btn {
 }
 
 input:focus {
-  outline: none;
+  outline: 2px solid #68747d;
 }
 
 article:hover {
