@@ -86,7 +86,7 @@ button.btn {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  font-family: "Paytone One", Times, serif;
+  font-family: var(--font-family);
   letter-spacing: 0.1rem;
   box-shadow: var(--box-shadow-second);
   border-style: hidden;
